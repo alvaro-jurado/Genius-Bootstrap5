@@ -1,0 +1,22 @@
+[
+    {
+        "freq": "103.3",
+        "title": "Antenne Bayern",
+        "src": "http://play.antenne.de/antenne.m3u"
+    },
+    {
+        "freq": "98.3",
+        "title": "Radio  Mirchi",
+        "src": "http://peridot.streamguys.com:7150/Mirchi"
+    },
+    {
+        "freq": "103.3",
+        "title": "Bayern 3",
+        "src": "https://streams.br.de/bayern3_1.m3u"
+    },
+    {
+        "freq": "103.3",
+        "title": "Rock Antenne",
+        "src": "http://play.rockantenne.de/rockantenne.m3u"
+    }
+]
