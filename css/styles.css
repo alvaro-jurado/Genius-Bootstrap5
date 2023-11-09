@@ -1,0 +1,163 @@
+body {
+    background-color: black;
+    min-height: 400px;
+    /*margin-bottom: 100px;*/
+    /*Evitar que el footer se coma contenido*/
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h3,
+h4,
+span,
+li {
+    color: white;
+}
+
+/*#estructura {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}*/
+
+.container,
+.container-player {
+    text-align: center;
+}
+
+.playlistContainer {
+    margin-top: 20px;
+}
+
+#reproductor {
+    margin-top: 20px;
+}
+
+#playlist {
+    list-style: none;
+}
+
+.songsList {
+    background-color: gray;
+    padding: 2px 20px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.songsList:hover {
+    opacity: 1;
+    background-color: #1ED760;
+}
+
+.songsList h3 {
+    margin-bottom: 0;
+}
+
+.songsList h4 {
+    margin-top: 0;
+}
+
+#control-buttons {
+    padding: 20px;
+}
+
+#volume-icons {
+    display: inline-block;
+}
+
+#volume-icons img {
+    margin: 0 5px;
+    height: 100%;
+    opacity: .8;
+}
+
+#mute-icon,
+#high-volume-icon {
+    display: none;
+}
+
+
+button {
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 48px;
+    color: #fff;
+    background-color: #1ED760;
+    height: 48px;
+
+    :hover {
+        transform: scale(1.04);
+        background-color: #21e065;
+    }
+
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round-image {
+    border-radius: 50%;
+}
+
+.spin-img {
+    animation: rotation 15s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.equalizer-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#equalizer {
+    opacity: .3;
+}
+
+.container-player {
+    margin-bottom: 200px;
+}
