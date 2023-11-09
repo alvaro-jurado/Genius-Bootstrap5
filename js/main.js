@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         let currentIndex = 0;
         let currentVolume = 0.5;
         let currentSeekValue = 0;
+        let prevVolume = 0;
 
         const buttonPlay = document.getElementById("btnPlay");
         const buttonSiguiente = document.getElementById("btnSig");
@@ -180,7 +181,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                 let x = centerX + Math.cos(angle) * (radius + dataArray[i] * volumeFactor);
                 let y = centerY + Math.sin(angle) * (radius + dataArray[i] * volumeFactor);
 
-                ctx.fillStyle = 'white';
+                ctx.fillStyle = 'rgba(0, 0, 0, 1)';
                 ctx.beginPath();
                 ctx.arc(x, y, 2, 0, 2 * Math.PI);
                 ctx.fill();
@@ -219,6 +220,44 @@ document.addEventListener("DOMContentLoaded", async function () {
         });
 
         volumeBar.addEventListener('input', updateVolume);
+        highVolumeIcon.addEventListener('click', function () {
+            prevVolume = currentVolume;
+            console.log("PREVVOLUME"+prevVolume);
+            muteIcon.style.display = 'inline';
+            lowVolumeIcon.style.display = 'none';
+            highVolumeIcon.style.display = 'none';
+            volumeBar.value = 0;
+            sound.volume(0);
+        });
+        lowVolumeIcon.addEventListener('click', function () {
+            prevVolume = currentVolume;
+            console.log("PREVVOLUME"+prevVolume);
+            muteIcon.style.display = 'inline';
+            lowVolumeIcon.style.display = 'none';
+            highVolumeIcon.style.display = 'none';
+            volumeBar.value = 0;
+            sound.volume(0);
+        });
+        muteIcon.addEventListener('click', function () {
+            volumeBar.value = prevVolume;
+            sound.volume(prevVolume);
+            if (prevVolume === 0) {
+                muteIcon.style.display = 'inline';
+                lowVolumeIcon.style.display = 'none';
+                highVolumeIcon.style.display = 'none';
+            } else if (prevVolume < 0.5) {
+                muteIcon.style.display = 'none';
+                lowVolumeIcon.style.display = 'inline';
+                highVolumeIcon.style.display = 'none';
+            } else {
+                muteIcon.style.display = 'none';
+                lowVolumeIcon.style.display = 'none';
+                highVolumeIcon.style.display = 'inline';
+            }
+        });
+        
+
+
         seekBar.addEventListener('input', function () {
             sound.seek(seekBar.value);
             currentTime.textContent = formatTime(Math.round(seekBar.value));

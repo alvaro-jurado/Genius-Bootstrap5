@@ -13,7 +13,51 @@
 </head>
 
 <body>
-    <div id="estructura" class="container-fluid">
+    <div class="container-fluid">
+        <div class="row bg-header justify-content-start">
+            <div id="search-bar" class="col-3">
+                <input class="search-bar" type='text' placeholder='Enter Song, Artist,...' />
+            </div>
+            <div class="dropdown col-1">
+                <button class="btn genres dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Genres
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Pop</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Hip hop</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Rap</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Rock</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Alt-Z</a></li>
+                </ul>
+            </div>
+            <button id="artists" class="col-1 offset-md-5">Artists</button>
+            <button id="contact-us" class="col-1 col-auto" onclick="window.open('./home.html','_self')">Contact
+                Us</button>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 sub-header">
+                <a href="./home.html#featured" style="border-left: 0px;">FEATURED</a>
+                <a href="./home.html#charts-container">CHARTS</a>
+                <a href="#">JUKEBOX</a>
+                <a href="./radioJukebox.html">RADIO</a>
+                <a href="#">PROMOTE YOUR MUSIC</a>
+            </div>
+        </div>
+
         <div class="row">
             <div id="reproductor" class="col-7">
                 <div class="container-player">
@@ -36,9 +80,9 @@
                         <span id="duration">0:00</span>
                     </div>
                     <div id="control-buttons">
-                        <button id="btnAnt">Anterior</button>
-                        <button id="btnPlay"> Play </button>
-                        <button id="btnSig">Siguiente</button>
+                        <button id="btnAnt" class="btnControl">Anterior</button>
+                        <button id="btnPlay" class="btnControl"> Play </button>
+                        <button id="btnSig" class="btnControl">Siguiente</button>
                     </div>
                     <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="0.5">
                     <div id="volume-icons">
@@ -49,17 +93,11 @@
                 </div>
             </div>
 
-            <div class="playlistContainer col-5">
+            <div class="playlistContainer col-5 offset-7">
 
             </div>
         </div>
-
-        <!--<div class="row">
-            <div class="col-7 equalizer">
-                <canvas id="equalizer" width="200" height="200"></canvas>
-            </div>
-        </div>
-    </div>-->
+    </div>
 
 
 </body>
