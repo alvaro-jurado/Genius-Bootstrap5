@@ -35,7 +35,7 @@ li {
     position: relative;
     background: rgb(255, 255, 100);
     padding: 15px;
-    z-index: 2;
+    z-index: 3;
 }
 
 #search-bar {
