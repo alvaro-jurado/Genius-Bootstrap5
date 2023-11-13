@@ -236,6 +236,12 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
 }
 
 .round-image {
@@ -304,9 +310,9 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 3px;
     background: rgb(216, 216, 87);
     background: -webkit-linear-gradient(left,
-    #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
+            #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
     background: linear-gradient(to right,
-    #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
+            #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f67280",
             endColorstr="#355c7d",
             GradientType=1);
@@ -318,9 +324,9 @@ input[type="range"]::-moz-range-track {
     height: 3px;
     background: rgb(216, 216, 87);
     background: -moz-linear-gradient(left,
-    #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
+            #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
     background: linear-gradient(to right,
-    #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
+            #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f67280",
             endColorstr="#355c7d",
             GradientType=1);
@@ -333,11 +339,11 @@ input[type="range"]::-ms-track {
     height: 3px;
     background: rgb(216, 216, 87);
     background: -moz-linear-gradient(left,
-    #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
+            #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
     background: -webkit-linear-gradient(left,
-    #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
+            #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
     background: linear-gradient(to right,
-    #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
+            #121604, #2c3715, #4a5c1e, #6c8327, #91ac2e, #a6c12f, #bbd62f, #d2ec2e, #daf127, #e3f61f, #ebfa14, #f4ff00);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f67280",
             endColorstr="#355c7d",
             GradientType=1);

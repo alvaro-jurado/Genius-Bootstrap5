@@ -46,6 +46,21 @@ li {
     padding: 15px;
 }
 
+textarea {
+    resize: none;
+    width: 270px;
+    height: 150px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+#send-button {
+    margin-top: 20px;
+}
+
 #search-bar {
     display: flex;
     justify-content: flex-start;

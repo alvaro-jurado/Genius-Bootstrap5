@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Programme';
+    src: local('Programme Regular'), local('Programme-Regular'),
+        url('Programme-Regular.woff2') format('woff2'),
+        url('Programme-Regular.woff') format('woff'),
+        url('Programme-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgba(255, 255, 255, 1);
+    font-family: 'Programme', Arial, sans-serif;
+    min-height: 400px;
+    margin-bottom: 100px;
+    /*Evitar que el footer se coma contenido*/
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.bg-header {
+    background: rgb(0, 0, 0);
+    padding: 30px 15px;
+}
+
+.nav {
+    color: white;
+    font-size: 13px;
+    opacity: .7;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+/*.nav:active {
+    text-decoration: underline;
+    opacity: 1;
+}*/
+
+.banner {
+    background: rgb(255, 255, 100);
+    padding: 150px;
+}
+
+.bg-promote {
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 50px;
+}
