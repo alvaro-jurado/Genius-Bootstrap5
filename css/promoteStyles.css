@@ -64,3 +64,22 @@ body {
 .hiw-title {
     margin-bottom: 25px;
 }
+
+#send-button {
+    margin-top: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type=text], input[type=url]  {
+    padding: .3rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}

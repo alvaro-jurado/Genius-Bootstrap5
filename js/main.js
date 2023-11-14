@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         const highVolumeIcon = document.getElementById('high-volume-icon');
         const volumeBar = document.getElementById('volume-bar');
         const contactUs = document.getElementById('contact-us');
-        const getStarted = document.getElementById('getStarted');
+        const artists = document.getElementById('artists');
 
         //Equalizer
         let analyser;
@@ -282,6 +282,10 @@ document.addEventListener("DOMContentLoaded", async function () {
         contactUs.addEventListener('click', function () {
             window.open('../html/contact-us.html', '_self')
         });        
+
+        artists.addEventListener('click', function () {
+            window.open('../html/artists.html', '_self')
+         });
 
         img.src = songs[currentIndex].img;
         title.innerHTML = songs[currentIndex].title;

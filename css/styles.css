@@ -140,16 +140,13 @@ li {
     z-index: -1;
 }
 
-#playlist {
-    list-style: none;
-}
-
 .songsList {
     background-color: gray;
     padding: 2px 20px;
     margin-bottom: 10px;
     opacity: 0.8;
     transition: 0.3s;
+    list-style: none;
 }
 
 .songsList:hover {

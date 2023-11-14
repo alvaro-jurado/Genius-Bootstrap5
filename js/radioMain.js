@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", async function () {
         const lowVolumeIcon = document.getElementById('low-volume-icon');
         const highVolumeIcon = document.getElementById('high-volume-icon');
         const volumeBar = document.getElementById('volume-bar');
+        const contactUs = document.getElementById('contact-us');
+        const artists = document.getElementById('artists');
 
         function loadRadio() {
             sound = new Howl({
@@ -131,6 +133,14 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         buttonSiguiente.addEventListener("click", nextRadio);
         buttonAnterior.addEventListener("click", prevRadio);
+
+        contactUs.addEventListener('click', function () {
+            window.open('../html/contact-us.html', '_self')
+        });        
+
+        artists.addEventListener('click', function () {
+            window.open('../html/artists.html', '_self')
+         });
 
         freq.innerHTML = radios[currentIndex].freq;
         title.innerHTML = radios[currentIndex].title;
