@@ -16,8 +16,6 @@ body {
     background: rgba(255, 255, 255, 1);
     font-family: 'Programme', Arial, sans-serif;
     min-height: 400px;
-    margin-bottom: 100px;
-    /*Evitar que el footer se coma contenido*/
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
@@ -41,11 +39,6 @@ body {
     opacity: 1;
 }
 
-/*.nav:active {
-    text-decoration: underline;
-    opacity: 1;
-}*/
-
 .banner {
     background: rgb(255, 255, 100);
     padding: 150px;
@@ -55,4 +48,19 @@ body {
     background: rgb(0, 0, 0);
     color: white;
     font-size: 50px;
+}
+
+.bg-hiw {
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 50px;
+}
+
+.hiw-section {
+    background: rgb(20, 25, 20);
+    padding: 50px;
+}
+
+.hiw-title {
+    margin-bottom: 25px;
 }
