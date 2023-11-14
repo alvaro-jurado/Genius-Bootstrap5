@@ -281,12 +281,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         contactUs.addEventListener('click', function () {
             window.open('../html/contact-us.html', '_self')
-        });
-
-        getStarted.addEventListener('click', function () {
-            window.open('../html/promote-music-form.html', '_self')
-        });
-        
+        });        
 
         img.src = songs[currentIndex].img;
         title.innerHTML = songs[currentIndex].title;

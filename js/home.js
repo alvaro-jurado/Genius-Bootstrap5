@@ -7,10 +7,9 @@ function darkMode() {
     chartsDK.classList.toggle("dark-mode");
  }
 
-
-
-
  const contactUs = document.getElementById('contact-us');
+
+ 
  contactUs.addEventListener('click', function () {
     window.open('../html/contact-us.html', '_self')
 });
