@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         const highVolumeIcon = document.getElementById('high-volume-icon');
         const volumeBar = document.getElementById('volume-bar');
         const contactUs = document.getElementById('contact-us');
+        const getStarted = document.getElementById('getStarted');
 
         //Equalizer
         let analyser;
@@ -280,6 +281,10 @@ document.addEventListener("DOMContentLoaded", async function () {
 
         contactUs.addEventListener('click', function () {
             window.open('../html/contact-us.html', '_self')
+        });
+
+        getStarted.addEventListener('click', function () {
+            window.open('../html/promote-music-form.html', '_self')
         });
         
 
