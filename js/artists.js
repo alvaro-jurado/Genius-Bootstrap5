@@ -14,12 +14,14 @@ document.addEventListener("DOMContentLoaded", async function () {
         let index = 0;
 
         artists.forEach((artist) => {
-            const listItem = document.createElement('div');
-            listItem.className = "artistsList";
-            listItem.classList.add('col-3');
-            listItem.classList.add('card');
-            listItem.classList.add('flip-z');
-            listItem.innerHTML = `
+            const divhref = document.createElement('a');
+            divhref.className = "artistsList";
+            divhref.classList.add('col-3');
+            divhref.classList.add('card');
+            divhref.classList.add('flip-z');
+            divhref.href = `../artistsPages/${artist.pageName}.html`;
+            
+            divhref.innerHTML = `
                <div class="card-front"> <h1>${artist.artist}</h1> </div>
                <div class="card-back"> <img src="${artist.img}"/> </div>
             `;
@@ -27,7 +29,8 @@ document.addEventListener("DOMContentLoaded", async function () {
                 img.src = artists[currentIndex].img;
                 artist.innerHTML = artists[currentIndex].artist;
             });*/
-            playlist.appendChild(listItem);
+           // divhref.appendChild(listItem);
+            playlist.appendChild(divhref);
             index++;
         });
         console.log(playlist);
@@ -42,14 +45,14 @@ document.addEventListener("DOMContentLoaded", async function () {
     function searchBar() {
         let filter, pl, li, div, i, txtValue;
 
-        filter = input.value.toUpperCase();
+        filter = input.value.toLowerCase();
         pl = document.getElementById("playlist");
         li = pl.getElementsByClassName("artistsList");
         
         for (i = 0; i < li.length; i++) {
             div = li[i].getElementsByTagName("div")[0];
             txtValue = div.textContent || div.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            if (txtValue.toLowerCase().indexOf(filter) > -1) {
                 li[i].style.display = "";
             } else {
                 li[i].style.display = "none";

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jukebox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.4/dist/howler.min.js"></script>
+    <script src="../js/main.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-header justify-content-start">
+            <div id="search-bar" class="col-3">
+                <input class="search-bar" type='text' placeholder='Enter Song, Artist,...' />
+            </div>
+            <div class="dropdown col-1">
+                <button class="btn genres dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Genres
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Pop</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Hip hop</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Rap</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Rock</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Alt-Z</a></li>
+                </ul>
+            </div>
+            <button id="artists" class="col-1 offset-md-5 d-xs-none">Artists</button>
+            <button id="contact-us" class="col-1 col-auto">Contact
+                Us</button>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 sub-header">
+                <a href="./home.html#featured" style="border-left: 0px;">FEATURED</a>
+                <a href="./home.html#charts-container">CHARTS</a>
+                <a href="#">JUKEBOX</a>
+                <a href="./radioJukebox.html">RADIO</a>
+                <a href="./promote-music.html">PROMOTE YOUR MUSIC</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="reproductor" class="col-7">
+                <div class="container-player">
+                    <h3 id="title"></h3>
+                    <h4 id="artist"></h4>
+                    <div class="container-flex">
+                        <div class="image-container">
+                            <img class="round-image" id="img" src="" alt="" width="200px">
+                        </div>
+                        <div class="equalizer-container">
+                            <canvas id="equalizer" width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="containerSeek">
+                        <span id="current-time">0:00</span>
+                        <input type="range" id="seek-bar" value="0" step="0.01" style="flex: 1;">
+                        <span id="duration">0:00</span>
+                    </div>
+                    <div id="control-buttons">
+                        <button id="btnAnt" class="btnControl">Prev</button>
+                        <button id="btnPlay" class="btnControl"> Play </button>
+                        <button id="btnSig" class="btnControl">Next</button>
+                    </div>
+                    <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="0.5">
+                    <div id="volume-icons">
+                        <img id="mute-icon" src="../images/mute_icon.png" alt="Mute">
+                        <img id="low-volume-icon" src="../images/low_volume_icon.png" alt="Low Volume">
+                        <img id="high-volume-icon" src="../images/high_volume_icon.png" alt="High Volume">
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlistContainer col-5 offset-7">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
