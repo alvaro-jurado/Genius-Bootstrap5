@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", async function () {
             playlist.appendChild(divhref);
             index++;
         });
-        console.log(playlist);
     } catch (error) {
         console.error('Error al cargar el archivo JSON:', error);
     }

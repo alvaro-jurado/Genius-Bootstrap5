@@ -83,6 +83,25 @@
         "genres": [
             "Pop"           
         ]
+    },
+    {
+        "src": "../music/Sasha Alex Sloan - Dancing With Your Ghost.mp3",
+        "img": "https://cdns-images.dzcdn.net/images/cover/85e1c8d3a8ecfe9fe746bc27e450aaab/500x500.jpg",
+        "title": "Dancing With Your Ghost",
+        "artist": "Sasha Alex Sloan",
+        "genres": [
+            "Pop",
+            "Alt-Z"            
+        ]
+    },{
+        "src": "../music/Sasha Alex Sloan - Dancing With Your Ghost.mp3",
+        "img": "https://cdns-images.dzcdn.net/images/cover/85e1c8d3a8ecfe9fe746bc27e450aaab/500x500.jpg",
+        "title": "Dancing With Your Ghost",
+        "artist": "Sasha Alex Sloan",
+        "genres": [
+            "Pop",
+            "Alt-Z"            
+        ]
     }
     
 ]
