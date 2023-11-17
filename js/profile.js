@@ -10,13 +10,14 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     songs.forEach((song, index) => {
         if (song.artist === "Sasha Alex Sloan") {
-
-
             const listItem = document.createElement('li');
             listItem.className = "songsList";
             listItem.innerHTML = `
+                <img id="listSongImg" src="${song.img}"/>
+                <div class="titleArtist">
                 <h3>${song.title}</h3>
                 <h4>${song.artist}</h4>
+                </div>
             `;
             artistSongs.appendChild(listItem);
         }
