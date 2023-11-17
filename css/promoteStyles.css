@@ -72,7 +72,14 @@ body {
 .form {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
+}
+
+.form-mg {
+
+    background: rgb(255, 255, 100);
+    padding: 20px;
 }
 
 input[type=text], input[type=url]  {
