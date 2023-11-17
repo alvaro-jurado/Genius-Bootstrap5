@@ -14,11 +14,9 @@ html {
 
 body {
     font-family: 'Programme', Arial, sans-serif;
-    min-height: 400px;
-    margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    background: linear-gradient(to bottom, transparent 0%, #ffff64 90%);
+    margin: 0;
+    background: linear-gradient(180deg, transparent, #ffff64) no-repeat center center/cover;
+    min-height: 100vh;
 }
 
 .bg-header {
@@ -127,7 +125,7 @@ h6{
 .artistSongsContainer {
     position: absolute;
     margin-top: 100px;
-    right: 30px;
+    right: 100px;
     width: 50%;
 }
 
@@ -138,7 +136,7 @@ h6{
 }
 
 #listSongImg {
-    display: inline-block;
+    display: block;
     width: 75px;
     height: 75px;
     float: left;

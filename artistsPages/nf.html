@@ -6,98 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NF</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.4/dist/howler.min.js"></script>
-    <script src="../js/main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="../js/profile.js"></script>
+    <link rel="stylesheet" href="../css/profile.css">
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row bg-header justify-content-start">
             <div id="search-bar" class="col-3">
-                <input class="search-bar" type='text' placeholder='Enter Song, Artist,...' />
+                <input id="search-bar-input" type='text' placeholder='Enter Artist' />
             </div>
-            <div class="dropdown col-1">
-                <button class="btn genres dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Genres
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Pop</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Hip hop</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Rap</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Rock</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Alt-Z</a></li>
-                </ul>
-            </div>
-            <button id="artists" class="col-1 offset-md-5 d-xs-none">Artists</button>
-            <button id="contact-us" class="col-1 col-auto">Contact
-                Us</button>
+            <a href="../html/home.html" id="home" class="col-1 offset-md-6 nav">HOME</a>
+            <a href="../html/artists.html" id="home" class="col-1 nav">ARTISTS</a>
+            <a href="../html/contact-us.html" id="contact" class="col-1 nav">CONTACT US</a>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-12 sub-header">
-                <a href="./home.html#featured" style="border-left: 0px;">FEATURED</a>
-                <a href="./home.html#charts-container">CHARTS</a>
-                <a href="#">JUKEBOX</a>
-                <a href="./radioJukebox.html">RADIO</a>
-                <a href="./promote-music.html">PROMOTE YOUR MUSIC</a>
+        <div class="row banner justify-content-start">
+            <div class="col-3 offset-1 image-container">
+                <img id="artistImage" class="round-image image-profile"
+                    src="" />
+            </div>
+        </div>
+        <div class="row justify-content-start">
+            <div class="col-3 a offset-1">
+                <h1 id="artistName"></h1>
+            </div>
+            <div class="col-5 artistSongsContainer">
+                <h3 id="songsListTitle">Popular Songs</h3>
             </div>
         </div>
 
-        <div class="row">
-            <div id="reproductor" class="col-7">
-                <div class="container-player">
-                    <h3 id="title"></h3>
-                    <h4 id="artist"></h4>
-                    <div class="container-flex">
-                        <div class="image-container">
-                            <img class="round-image" id="img" src="" alt="" width="200px">
-                        </div>
-                        <div class="equalizer-container">
-                            <canvas id="equalizer" width="400" height="400"></canvas>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <div class="containerSeek">
-                        <span id="current-time">0:00</span>
-                        <input type="range" id="seek-bar" value="0" step="0.01" style="flex: 1;">
-                        <span id="duration">0:00</span>
-                    </div>
-                    <div id="control-buttons">
-                        <button id="btnAnt" class="btnControl">Prev</button>
-                        <button id="btnPlay" class="btnControl"> Play </button>
-                        <button id="btnSig" class="btnControl">Next</button>
-                    </div>
-                    <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="0.5">
-                    <div id="volume-icons">
-                        <img id="mute-icon" src="../images/mute_icon.png" alt="Mute">
-                        <img id="low-volume-icon" src="../images/low_volume_icon.png" alt="Low Volume">
-                        <img id="high-volume-icon" src="../images/high_volume_icon.png" alt="High Volume">
-                    </div>
-                </div>
-            </div>
-
-            <div class="playlistContainer col-5 offset-7">
-
+        <div class="row justify-content-start">
+            <div class="col-3 verified offset-1">
+                <h5 id="socialsAndVerified"></h5>
             </div>
         </div>
+
+        <div class="row justify-content-start">
+            <div class="col-3 about offset-1">
+                <h6 id="about"></h6>
+            </div>
+        </div>
+
+        <div class="row justify-content-start">
+            <div class="col-3 offset-1">
+                <p>
+                    NF (stylized as ИF), real name Nathan Feuerstein (pronounced “fire-STINE”), is a rapper and
+                    songwriter from the small town of Gladwin, Michigan. As a child, Nate’s parents went through a
+                    divorce, where he would then live with his mother. Later on, Nate’s life started getting more
+                    difficult whenever his mother’s boyfriend started physically abusing him. However, the most
+                    traumatic event in Nate’s life was finding his mother dead from a drug overdose.
+                </p>
+                <p>
+                    During the hard times of his life, Nate would fall back on music to escape from the world and
+                    express himself freely by writing music and then recording it on his karaoke machine with
+                    instrumentals playing in the background. In 2008, Nate participated in the Fine Arts Festival rap
+                    competition.
+                </p>
+                <p>
+                    In October 2017, she stepped out on her own with her debut single “Ready Yet” prior to releasing her
+                    first EP sad girl on April 18, 2018. Her second EP loser was released on November 29, 2018.
+                </p>
+                <p>
+                    In 2010, he released his first album, Moments, independently. The album got him a record deal with
+                    Xist Music in 2012, with a new stage name, NF. Nate released two songs with Xist, and an EP was
+                    announced, but never released because he decided to leave the label (however, most of these songs
+                    can be found online). NF started working with fellow Michigan producer, Tommee Profitt, searching
+                    for a new label.
+                </p>
+                <p>
+                    After about two years, Nate and Tommee were spotted by Capitol Christian Music Group after hearing
+                    their song “Wake Up”. In the summer of 2014, NF’s self-titled EP was released, including his debut
+                    single “All I Have” and a re-recorded version of “Wake Up.” The following year was the release of
+                    his debut album Mansion. The following year, Therapy Session was released and made it to #12 on the
+                    Billboard 200 charts and was critically acclaimed for its passion and honesty behind the lyrics.
+                </p>
+                <p>
+                    In 2017, NF moved from Capitol CMG to Capitol Records and announced his third album Perception. This
+                    album was released on October 6 and is known as his mainstream debut. The project debuted at No. 1
+                    on the iTunes overall charts and on the Billboard 200, beating out Tom Petty’s posthumous greatest
+                    hits and Lil Pump’s debut album. His single “Let You Down” became a radio success shortly after and
+                    is now a multi-platinum song.
+                </p>
+                <p>
+                    On July 26, 2019, his fourth studio album, The Search was released. The project debuted at No.1 on
+                    the Billboard 200 beating out Chance The Rapper’s debut studio album The Big Day.
+                </p>
+                <p>
+                    On February 18, 2021, NF announced that his new project CLOUDS (THE MIXTAPE) would be released on
+                    March 26, 2021, marking the first mixtape NF has ever released.
+                </p>
+                <p>
+                    On February 16, 2023, NF announced that his fifth studio album, HOPE was released on April 7, 2023.
+                </p>
+            </div>
+        </div>
+
+
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

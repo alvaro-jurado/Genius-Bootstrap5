@@ -2,47 +2,65 @@
     {
         "artist": "Sasha Alex Sloan",
         "img": "https://i.scdn.co/image/ab677762000056b8065bd526beb41b0dfe3d91a7",
-        "pageName" : "sasha-alex-sloan"
+        "pageName" : "sasha-alex-sloan",
+        "socials" : "sadgirlsloan",
+        "verified" : "Y"
     },
     {
         "artist": "NF",
         "img": "https://i.scdn.co/image/ab6761610000e5eb1cf142a710a2f3d9b7a62da1",
-        "pageName" : "nf"
+        "pageName" : "nf",
+        "socials" : "NFrealmusic",
+        "verified" : "Y"
     },
     {
         "artist": "Halsey",
         "img": "https://i.scdn.co/image/ab6761610000e5ebd707e1c5177614c4ec95a06c",
-        "pageName" : "halsey"
+        "pageName" : "halsey",
+        "socials" : "sadgirlsloan",
+        "verified" : "Y"
     },
     {
         "artist": "Bruno Mars",
         "img": "https://i.scdn.co/image/ab6761610000e5ebc36dd9eb55fb0db4911f25dd",
-        "pageName" : "bruno-mars"
+        "pageName" : "bruno-mars",
+        "socials" : "sadgirlsloan",
+        "verified" : "Y"
     },
     {
         "artist": "Julia Michaels",
         "img": "https://i.scdn.co/image/ab67706c0000da84870894c6721bf24bcf2cce65",
-        "pageName" : "julia-michaels"
+        "pageName" : "julia-michaels",
+        "socials" : "sadgirlsloan",
+        "verified" : "Y"
     },
     {
         "artist": "Ruth B.",
         "img": "https://i.scdn.co/image/ab6761610000e5ebc36cd1cebde513411c2e1504",
-        "pageName" : "ruth-b"
+        "pageName" : "ruth-b",
+        "socials" : "sadgirlsloan",
+        "verified" : "Y"
     },
     {
         "artist": "5 Seconds of Summer",
         "img": "https://i.scdn.co/image/ab6761610000e5eb5048d9616b459ef90f04b6d8",
-        "pageName" : "5-seconds-of-summer"
+        "pageName" : "5-seconds-of-summer",
+        "socials" : "sadgirlsloan",
+        "verified" : "Y"
     },
     {
         "artist": "Lexi Jayde",
         "img": "https://i.scdn.co/image/ab67616d00001e02c7d259f5b66e67e3c61f7010",
-        "pageName" : "lexi-jayde"
+        "pageName" : "lexi-jayde",
+        "socials" : "sadgirlsloan",
+        "verified" : "Y"
     },
     {
         "artist": "Alec Benjamin",
         "img": "https://i.scdn.co/image/ab67616100005174c7e8521887c99b10c8bbfbac",
-        "pageName" : "alec-benjamin"
+        "pageName" : "alec-benjamin",
+        "socials" : "sadgirlsloan",
+        "verified" : "Y"
     }
     
 ]
