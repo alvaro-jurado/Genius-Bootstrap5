@@ -136,6 +136,12 @@ li {
     left: 0;
 }
 
+#reproductorRadio {
+    position: fixed;
+    top: 150px;
+    left: 0;
+}
+
 .container-player {
     z-index: -1;
 }
@@ -163,6 +169,32 @@ li {
 }
 
 .songsList h4 {
+    margin-top: 0;
+}
+
+.radioList {
+    background-color: gray;
+    padding: 2px 20px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    transition: 0.3s;
+    list-style: none;
+}
+
+.radioList:hover {
+    opacity: 1;
+    background-color: rgb(255, 255, 100);
+}
+
+.radioList::selection {
+    background-color: aqua;
+}
+
+.radioList h3 {
+    margin-bottom: 0;
+}
+
+.radioList h4 {
     margin-top: 0;
 }
 
